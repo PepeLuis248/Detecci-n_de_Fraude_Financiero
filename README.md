@@ -55,7 +55,7 @@ Predicción con umbral personalizado
 probabilidades = modelo.predict_proba(nuevos_datos)[:, 1]
 veredicto = (probabilidades >= 0.7).astype(int)
 
-
+---
 🔬 Profundización Técnica: ¿Por qué NearMiss-3?
 
 En este dataset, la clase minoritaria (Fraude) representa una fracción mínima del total. Para evitar que el modelo se sesgue hacia la clase mayoritaria, implementamos **NearMiss (Versión 3)**, un algoritmo de *undersampling* basado en la técnica de los **K-Nearest Neighbors (KNN)**.
