@@ -48,7 +48,6 @@ El modelo basa sus decisiones principalmente en variables de comportamiento tran
 2. Carga el archivo `lgbm_fraud_champion.pkl` usando `joblib`.  
 3. Utiliza la función de predicción con umbral ajustable para equilibrar la precisión según las necesidades del negocio.  
 
-```python
 import joblib
 modelo = joblib.load('lgbm_fraud_champion.pkl')
 
