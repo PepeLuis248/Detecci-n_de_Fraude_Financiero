@@ -1,9 +1,9 @@
 ---
 
-# 📝 Sugerencia de Contenido para tu `README.md`
+📝 Sugerencia de Contenido para tu `README.md`
 
 ```markdown
-# 🛡️ Detección de Fraude Financiero con Machine Learning
+🛡️ Detección de Fraude Financiero con Machine Learning
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![Scikit-Learn](https://img.shields.io/badge/Library-Scikit--Learn-orange.svg)
