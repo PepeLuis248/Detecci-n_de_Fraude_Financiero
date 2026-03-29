@@ -1,3 +1,10 @@
+Dataset
+
+financial_fraud_detection_dataset.csv
+
+El archivo CSV es demasiado grande para GitHub.  
+[Descargar dataset desde Google Drive](https://drive.google.com/drive/folders/1-J_H_2kcWp5uvU_hNJ5UajPBMcq1KJjU?hl=es)
+
 🛡️ Detección de Fraude Financiero con Machine Learning
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
