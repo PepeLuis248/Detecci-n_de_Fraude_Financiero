@@ -22,7 +22,7 @@ En el sector financiero, el fraude representa pérdidas millonarias. Sin embargo
 
  📈 Resultados Comparativos
 
-Tras evaluar múltiples modelos, el ganador fue **LightGBM** debido a su equilibrio entre velocidad y capacidad de detección:
+Tras evaluar múltiples modelos, el ganador fue **LightGBM** debido a su equilibrio entre velocidad y capacidad de detección
 
 | Métrica | Random Forest | XGBoost | LightGBM (Ganador) |
 | :--- | :---: | :---: | :---: |
