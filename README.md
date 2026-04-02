@@ -20,8 +20,8 @@ El objetivo del modelo es **maximizar el Recall**, asegurando que casi ningún f
 
 🚀 Tecnologías Utilizadas
 - **Lenguaje:** Python (Google Colab)  
-- **Modelos:** Random Forest, XGBoost y **LightGBM** (Ganador)  
-- **Manejo de Desbalance:** Técnicas de Undersampling (**NearMiss**)  
+- **Modelos:** Random Forest, XGBoost y **LightGBM** (Modelo que entrenó mejor los datos)  
+- **Manejo de Desbalance:** Técnicas de Undersampling 
 - **Optimización:** GridSearchCV con validación cruzada estratificada  
 
 ---
@@ -42,31 +42,17 @@ El modelo captura el **99.7%** de los intentos de fraude detectados en el set de
 ---
 
 🔍 Análisis de Importancia de Variables
-El modelo basa sus decisiones principalmente en variables de comportamiento transaccional (**V14, V17, Amount**), lo que permite una trazabilidad clara de por qué una transacción es marcada como sospechosa.
+El modelo basa sus decisiones principalmente en variables de comportamiento transaccional (**Amount**), lo que permite una trazabilidad clara de por qué una transacción es marcada como sospechosa.
 
 ---
 
 🛠️ Cómo utilizar el modelo
 1. Clona el repositorio.  
-2. Carga el archivo `lgbm_fraud_champion.pkl` usando `joblib`.  
+2. Carga el archivo `champion.pkl` usando `joblib`.  
 3. Utiliza la función de predicción con umbral ajustable para equilibrar la precisión según las necesidades del negocio.  
 
 import joblib
-modelo = joblib.load('lgbm_fraud_champion.pkl')
-
-Predicción con umbral personalizado
-probabilidades = modelo.predict_proba(nuevos_datos)[:, 1]
-veredicto = (probabilidades >= 0.7).astype(int)
-
----
-🔬 Profundización Técnica: ¿Por qué NearMiss-3?
-
-En este dataset, la clase minoritaria (Fraude) representa una fracción mínima del total. Para evitar que el modelo se sesgue hacia la clase mayoritaria, implementamos **NearMiss (Versión 3)**, un algoritmo de *undersampling* basado en la técnica de los **K-Nearest Neighbors (KNN)**.
-
-**¿Cómo funciona?**
-A diferencia del submuestreo aleatorio, NearMiss-3 selecciona ejemplos de la clase mayoritaria que están más cerca de los límites de decisión de la clase minoritaria. 
-* **Estrategia:** Se asegura de que cada ejemplo de la clase de fraude tenga una representación de ejemplos "normales" a su alrededor.
-* **Beneficio:** Esto permite que modelos como **LightGBM** aprendan con mayor precisión dónde termina una transacción legítima y dónde empieza un patrón sospechoso, optimizando la separación de clases en un espacio de 5 millones de registros.
+modelo = joblib.load('champion.pkl')
 
 ---
 
