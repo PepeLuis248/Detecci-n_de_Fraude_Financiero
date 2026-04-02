@@ -7,10 +7,6 @@ El archivo CSV es demasiado grande para GitHub.
 
 🛡️ Detección de Fraude Financiero con Machine Learning
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
-![Scikit-Learn](https://img.shields.io/badge/Library-Scikit--Learn-orange.svg)
-![LightGBM](https://img.shields.io/badge/Model-LightGBM-brightgreen.svg)
-
 Este proyecto desarrolla un sistema de **clasificación binaria** capaz de detectar transacciones fraudulentas en un dataset masivo (5 millones de registros), enfrentando el desafío crítico del **desbalance extremo de clases**.
 
 ---
