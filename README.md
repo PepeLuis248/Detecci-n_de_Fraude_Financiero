@@ -47,13 +47,20 @@ El modelo basa sus decisiones principalmente en variables de comportamiento tran
 ---
 
 🛠️ Cómo utilizar el modelo
-1. Clona el repositorio.  
-2. Carga el archivo `Deteccion_Fraude_Financiero.pkl` usando `joblib`.  
-3. Utiliza la función de prediccion con umbral ajustable para equilibrar la precisión según las necesidades del negocio.  
 
-import joblib
-modelo = joblib.load('Detección_Fraude_Financiero.pkl')
+Descarga Directa
 
+seguir los siguientes pasos:
+
+    Hacer clic en el nombre del archivo (Detección_Fraude_Financiero.pkl).
+    Buscar el botón que dice "Download" o "Download raw file".
+    Guardarlo en su computadora.
 ---
+Cómo usar el archivo en Python
 
+import pickle
+
+# Cargar el modelo o archivo
+with open('Detección_Fraude_Financiero.pkl', 'rb') as archivo:
+    modelo_cargado = pickle.load(archivo)
 
