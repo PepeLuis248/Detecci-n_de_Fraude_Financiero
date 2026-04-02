@@ -61,6 +61,7 @@ Cómo usar el archivo en Python
 import pickle
 
 Cargar el modelo o archivo
+
 with open('Detección_Fraude_Financiero.pkl', 'rb') as archivo:
     modelo_cargado = pickle.load(archivo)
 
