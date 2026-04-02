@@ -48,11 +48,11 @@ El modelo basa sus decisiones principalmente en variables de comportamiento tran
 
 🛠️ Cómo utilizar el modelo
 1. Clona el repositorio.  
-2. Carga el archivo `champion.pkl` usando `joblib`.  
+2. Carga el archivo `Detección_Fraude_Financiero.pkl` usando `joblib`.  
 3. Utiliza la función de predicción con umbral ajustable para equilibrar la precisión según las necesidades del negocio.  
 
 import joblib
-modelo = joblib.load('champion.pkl')
+modelo = joblib.load('Detección_Fraude_Financiero.pkl')
 
 ---
 
